@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        background-color: grey;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container>header{
+        width: 100%;
+        height: 20%;
+        display: grid;
+        place-items: center;
+        background-color: aquamarine;
+    }
+    .container>nav{
+        position: relative;
+        width: 100%;
+        height: 10%;
+        background-color: black;
+    }
+    .container>nav>ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        list-style: none;
+    }
+    .container>nav>ul>li{
+        height: 100%;
+        padding: 0px 10px;
+        display: grid;
+        place-content: center;
+    }
+    .container>nav>ul>li>a{
+        text-decoration: none;
+        color: white;
+    }
+    .container>nav>ul>li:hover{
+        background-color: aqua;
+    }
+    .container>main{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        gap: 15px;
+        background-color: white;
+    }
+    .container>main>.left-box{
+        width: 70%;
+        height: 100%;
+        padding: 40px 20px;
+        border-right: 1px solid gray;
+        /* background-color: red; */
+    }
+    .container>main>.left-box>.image{
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        background-color: gray;
+    }
+    .container>main>.right-box{
+        overflow: scroll;
+        scrollbar-width: none;
+        width: 30%;
+    }
+    .container>main>.right-box>.card{
+        width: 100%;
+        height: 300px;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+        /* background-color: blue; */
+    }
+    .container>main>.right-box>.card>.img{
+        width: 100%;
+        height: 50%;
+        background-color: gray;
+    }
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>ETEC CENTER</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Download</a></li>
+                <li style="position: absolute;right: 0;"><a href="#">About ETEC</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="left-box">
+                <h1>TITLE HEADING</h1><br>
+                <b>title description,26-08-2024</b>
+                <div class="image">
+                    <p>image</p>
+                </div>
+                <p>Some Text</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic animi minima alias harum reprehenderit, mollitia, ipsam, obcaecati voluptates corporis vero modi consectetur officia iste repellat? Quae pariatur possimus ratione dolor.</p>
+            </div>
+            <div class="right-box">
+                <div class="card">
+                    <h1>About Me</h1><br>
+                    <div class="img">
+                        <p>image</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fugit!</p>
+                </div>
+                <div class="card">
+                    <h1>Popular Post</h1><br>
+                    <div class="img">
+                        <p>image</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fugit!</p>
+                </div>
+                <div class="card">
+                    <h1>Popular Post</h1><br>
+                    <div class="img">
+                        <p>image</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fugit!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

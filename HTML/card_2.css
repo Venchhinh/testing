@@ -1,0 +1,11 @@
+p{
+    animation:SlideIn 1.5s linear ;
+}
+@keyframes SlideIn{
+    from{
+        translate: 150vw;
+    }
+    to{
+        translate: 0;
+    }
+}

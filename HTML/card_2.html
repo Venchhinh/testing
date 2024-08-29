@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #000;
+    }
+    nav{
+        padding:25px;
+        border-radius: 10px;
+        -webkit-box-shadow:0px 0px 67px 18px rgba(130,130,130,1);
+        -moz-box-shadow: 0px 0px 67px 18px rgba(130,130,130,1);
+        box-shadow: 0px 0px 67px 18px rgba(130,130,130,1);
+        background-color: rgba(128, 128, 128, 0.392);
+    }
+    nav>ul{
+        display: flex;
+    }
+    nav>ul>li{
+        list-style: none;
+        width: 100%;
+        padding: 0px 20px;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        padding: 5px 0px;
+    }
+    a::after{
+        content: '';
+        width: 0;
+        top: 0;
+        right: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.6s linear;
+        background-color: yellowgreen;
+    }
+    a::before{
+        content: '';
+        width: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.6s linear;
+        background-color: yellowgreen;
+    }
+    a:hover::after{
+        width: 100%;
+    }
+    a:hover::before{
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Follow</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

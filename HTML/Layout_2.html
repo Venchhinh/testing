@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        width: 800px;
+        height: 500px;
+        background-color: red;
+    }
+    .container>header{
+        width: 100%;
+        height:100px;
+        color: white;
+        display: grid;
+        place-items: center;
+        background-color: rgb(33, 33, 33);
+    }
+    nav{
+        width: 100%;
+        padding: 20px 0px;
+        background-color: white;
+    }
+    nav>ul{
+        width: 100%;
+        display: flex;
+        list-style: none;
+    }
+    nav>ul>li{
+        padding: 0px 20px;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    a:hover{
+        color: blue;
+    }
+    main{
+        width: 100%;
+        height: 300px;
+        display: grid;
+        place-content: center;
+        background-color: aliceblue;
+    }
+    footer{
+        width: 100%;
+        height:40px;
+        display: grid;
+        place-content: center;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Shop Detail</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h4>Content</h4>
+        </main>
+        <footer>
+            <center>footer</center>
+        </footer>
+    </div>
+</body>
+</html>
